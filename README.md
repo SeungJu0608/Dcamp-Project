@@ -11,7 +11,7 @@
   기업의 데이터 자산 보호를 위해 데이터 비식별화 작업을 거쳤습니다.
   
   - 데이터 타입과 개수 
- #   | Column     |Non-Null Count | Dtype  
+ index   | Column     |Non-Null Count | Dtype  
 ---  |---------- | -------------- | ----  
 0  | col1        |7836 non-null   |int64  
 1  | col2         |7836 non-null   |object 
