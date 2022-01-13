@@ -93,7 +93,7 @@ def cat6(x):
     return True
   else:
     return False
-data_clean["cat6"] = data_clean.apply(lambda x : 1 if (Welling(x)) else(0), axis = 1)
+data_clean["cat6"] = data_clean.apply(lambda x : 1 if (cat6(x)) else(0), axis = 1)
 
 def cat7(x):
   if ("CAT7" in x["col3"].split(" ")):
@@ -106,7 +106,7 @@ def cat7(x):
     return True
   else:
     return False
-data_clean["cat7"] = data_clean.apply(lambda x : 1 if (Bos(x))  else(0), axis = 1)
+data_clean["cat7"] = data_clean.apply(lambda x : 1 if (cat7(x))  else(0), axis = 1)
 
 
 def cat8(x):
@@ -118,7 +118,7 @@ def cat8(x):
     return True
   else:
     return False
-data_clean["cat9"] = data_clean.apply(lambda x : 1 if (Square(x)) else(0), axis = 1)
+data_clean["cat8"] = data_clean.apply(lambda x : 1 if (cat8(x)) else(0), axis = 1)
 
 data_clean["cat10"] = data_clean.apply(lambda x : 1 if (("cat10" in x["col3"].split(" ")) or ("CAT10" in x["col3"].split(" "))) else(0), axis = 1)
 data_clean["cat11"] = data_clean.apply(lambda x : 1 if (("cat11" in x["col3"].split(" ")[1])) else(0), axis = 1)
